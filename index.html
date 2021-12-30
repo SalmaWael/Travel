@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fireworks.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header id="header">
+
+    <!-- ///////////////////////////////////////////////// nav bar -->
+    <!-- if u want to fix it just add class fixed-top -->
+    <nav class="navbar navbar-expand-lg  navbar-light" style="background-color: #545454;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img style=" background-color: #ECE7DF;border-radius: 15px;"
+            src="assets/logo-removebg-preview.png" id="logo"></a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+          style="border:none;outline: none;box-shadow: none;">
+          <span class="navbar-toggler-icon" style="outline: none;"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link navel" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navel" aria-current="page" href="#Ratings">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navel" aria-current="page" href="#Allform">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navel" aria-current="page" href="#ourLocation">Our Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navel" aria-current="page" href="#footerDiv">Reach Us</a>
+            </li>
+            <li class="nav-item">
+              <a id="playAnimation" class="nav-link navel"><i class="fas fa-star"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <!-- /////////////////////////////////////////////////End of navbar -->
+
+
+    <div class="">
+      <p id="demo"></p>
+
+      <div id="fire" class="container-fluid animationDisplay">
+        <div class="row">
+          <div style=" display: flex;flex-direction: row;justify-content: center; align-items: center;" class="col-12">
+
+            <div id="happy">
+
+              <p>Happy New Year</p>
+              <p>2022</p>
+            </div>
+
+            <div class="firework" id="firework1">
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+            </div>
+            <div class="firework" id="firework2">
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+            </div>
+            <div class="firework" id="firework3">
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+            </div>
+            <div class="firework" id="firework4">
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+            </div>
+            <div class="firework" id="firework5">
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+            </div>
+
+          </div>
+        </div>
+
+  </header>
+
+
+
+
+  <main>
+
+
+    <!-- /////////////////////////////////////////////////Slide show -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="assets/singapore.jpg" class="d-block carousel-img" alt="..." style="opacity: 0.9;">
+          <div class="carousel-caption carousel-text">
+            <h5>Singapore</h5>
+            <!-- <p>Some representative placeholder content for the first slide.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="assets/paris.jpg" class="d-block carousel-img" alt="..." style="opacity: 0.9;">
+          <div class="carousel-caption carousel-text">
+            <h5>Paris</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/prague.jpg" class="d-block carousel-img" alt="..." style="opacity: 0.9;">
+          <div class="carousel-caption carousel-text">
+            <h5>Prague</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/moscow.jpg" class="d-block carousel-img" alt="..." style="opacity: 0.9;">
+          <div class="carousel-caption carousel-text">
+            <h5>Moscow</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- /////////////////////////////////////////////////End of Slide show -->
+
+
+
+    <!-- //////////////////////////rating cards -->
+    <div id="Ratings" class="container-fluid">
+
+      <h2 class="sectionHeaders">What They're Saying</h2>
+
+      <div class="row justify-content-around">
+        <div class="rating-cards col-lg-3 col-sm-10 col-md-5">
+          <img class="rating-persons" src="assets/p1.png">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="ratingP">All over my trip are good and memorable experience with me Specially my travel agent
+            (Mr.Ahmed) so much
+            helpful on my trip.</p>
+          <h4>Shery John</h4>
+        </div>
+        <div class="rating-cards col-lg-3 col-sm-10 col-md-5">
+          <img class="rating-persons" src="assets/p2.png">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i></div>
+          <p class="ratingP">It was an awesome trip. We enjoyed a lot with this Travel Agency except that hotel didn't
+            worth. Rest all was up to the mark and well organized.</p>
+          <h4>John Mark</h4>
+        </div>
+        <div class="rating-cards col-lg-3 col-sm-10 col-md-8">
+          <img class="rating-persons" src="assets/p3.png">
+          <div class="stars"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i></div>
+          <p class="ratingP">I won't recommend to use this Travel Agency services as they
+            focus more on getting money from their customer than increasing customer experience.</p>
+          <h4>Marry John</h4>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////////////// end of rating cards -->
+
+
+
+
+    <!-- //////////////////////////////form -->
+    <div id="formSec" class="container-fluid">
+
+      <div class="row justify-content-around">
+        <div id="DiscountImageDiv" class="col-lg-6 col-sm-10 col-md-5">
+
+          <img id="DiscountImage" src="assets/discount.png">
+          <div id="discountText" class="top-right">50%<br>Discount</div>
+
+        </div>
+
+        <div class="col-lg-5 col-sm-10 col-md-5">
+
+
+          <form id="Allform">
+            <h2 id="discountForm" class="sectionHeaders">Contact Us</h2>
+
+            <div class="form-group">
+              <label for="usernames">
+                Username:
+              </label>
+              <input type="text" required minlength="3" maxlength="10" name="username" id="usernames"
+                class="form-control">
+              <small id="usercheck" class="form-text
+                  text-muted invalid-feedback">
+                User Name must be from 3 to 10 alphapets
+              </small>
+            </div>
+
+            <div class="form-group">
+              <label for="telephoneNumber">
+                Telephone Number:
+              </label>
+              <input type="number" name="telephoneNumber" id="telephoneNumber" required minlength="11" maxlength="11"
+                class="form-control">
+              <small id="telephoneNumbervalid" class="form-text
+                    text-muted invalid-feedback">
+                Telephone Number must be a valid Egyptian number
+              </small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">
+                Email:
+              </label>
+              <input type="email" name="email" id="email" required class="form-control">
+              <small id="emailvalid" class="form-text
+                    text-muted invalid-feedback">
+                Your email must be a valid email
+              </small>
+            </div>
+
+            <button id="submitbtn" type="button" data-bs-target="#staticBackdrop">
+              Submit
+            </button>
+          </form>
+
+          <!-- Vertically centered modal
+         Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Correct data</h5>
+                  <!-- <button id="ModalXbtn" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center;align-items: center;"
+                  class="modal-body">
+                  <!-- ///////////////////// gar irsal alemail -->
+                  <div class="spinner-border text-dark mb-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <p style="text-align: center;">جار إرسال الايميل</p>
+                </div>
+                <div class="modal-footer">
+                  <button id="ModalOKbtn" type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                    aria-label="Close">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //////////////////////////// end of form -->
+
+
+
+
+    <!-- /////////////////////////////////////////////////map -->
+    <div id="ourLocation"
+      style="margin-top: 2%;padding-top: 4% ;display: flex;flex-direction: column;align-items: center; justify-content: center;">
+      <h2 class="sectionHeaders">Check our Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54581.63446897273!2d32.32018906049469!3d31.238673304526646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f99c3e939e6b99%3A0x4cae04550f7d4cb3!2z2KjZiNixINiz2LnZitiv2Iwg2KjZiNixINmB2KTYp9iv2Iwg2KjZiNixINiz2LnZitiv!5e0!3m2!1sar!2seg!4v1640586792388!5m2!1sar!2seg"
+        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+    <!-- /////////////////////////////////////////////////arrow button-->
+
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  </main>
+
+
+
+
+  <footer id="footerDiv">
+    <div id="footerSec" class="container-fluid" style="background-color: #545454;">
+
+      <div class="container">
+        <div class="row">
+          <h6 id="footerH">Welcome to our Trip and Tour Agency.</h6>
+          <div class="footer-div col-lg-6 col-sm-10 col-md-6">
+
+
+            <table>
+              <tr class="footerEle">
+                <td><a href="tel:066-3263863"><i class="footerI fas fa-phone-alt"></i></a> </td>
+                <td class="Ita"><a href="tel:066-3263863">066-3263863</a></td>
+              </tr>
+              <tr class="footerEle">
+                <td><a href="tel:+2001010477577"><i class="footerI fas fa-mobile-alt"></i></a> </td>
+                <td class="Ita"><a href="tel:+2001010477577">+20 101 047 7577</a></td>
+              </tr>
+              <tr class="footerEle">
+                <td><i class="footerI fas fa-map-marker-alt"></i></td>
+                <td><span id="address">Nahda St, El Free Por building,<br> 5th Floor, Office No. 513,<br> P.O Box 473
+                    Port
+                    Said, Egypt</span></td>
+              </tr>
+            </table>
+
+          </div>
+
+          <div class="footer-div col-lg-6 col-sm-10 col-md-6">
+
+            <table>
+              <tr class="footerEle">
+                <td><a href="https://it-genesis.com/"><i class="footerI fas fa-globe"></i></a></td>
+                <td class="Ita"><a href="https://it-genesis.com/">www.it-genesis.com</a></td>
+              </tr>
+              <tr class="footerEle">
+                <td><a href="mailto:info@it-genesis.com"><i class="footerI fas fa-envelope"></i></a> </td>
+                <td class="Ita"><a href="mailto:info@it-genesis.com">info@it-genesis.com</a></td>
+              </tr>
+              <tr class="footerEle">
+                <td><a href="https://www.facebook.com/itgenesisofficial"> <i class="footerI fab fa-facebook"></i></a>
+                </td>
+                <td class="Ita"><a href="https://www.facebook.com/itgenesisofficial">itgenesisofficial</a></td>
+              </tr>
+            </table>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
