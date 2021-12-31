@@ -62,7 +62,7 @@
 
 
     <div class="">
-      <p id="demo"></p>
+      <p id="StayTuned"></p>
 
       <div id="fire" class="container-fluid animationDisplay">
         <div class="row">
@@ -262,11 +262,11 @@
             <h2 id="discountForm" class="sectionHeaders">Contact Us</h2>
 
             <div class="form-group">
-              <label for="usernames">
-                Username:
+              <label for="username">
+                Username :
               </label>
-              <input type="text" required minlength="3" maxlength="10" name="username" id="usernames"
-                class="form-control">
+              <input type="text" required minlength="3" maxlength="10" name="username" id="username"
+                class="form-control" onkeyup="validateUsername()">
               <small id="usercheck" class="form-text
                   text-muted invalid-feedback">
                 User Name must be from 3 to 10 alphapets
@@ -275,10 +275,10 @@
 
             <div class="form-group">
               <label for="telephoneNumber">
-                Telephone Number:
+                Telephone Number :
               </label>
               <input type="number" name="telephoneNumber" id="telephoneNumber" required minlength="11" maxlength="11"
-                class="form-control">
+                class="form-control" onkeyup="validatePhone()">
               <small id="telephoneNumbervalid" class="form-text
                     text-muted invalid-feedback">
                 Telephone Number must be a valid Egyptian number
@@ -287,9 +287,9 @@
 
             <div class="form-group">
               <label for="email">
-                Email:
+                Email :
               </label>
-              <input type="email" name="email" id="email" required class="form-control">
+              <input type="email" name="email" id="email" required class="form-control" onkeyup="validateEmail()">
               <small id="emailvalid" class="form-text
                     text-muted invalid-feedback">
                 Your email must be a valid email
@@ -338,8 +338,9 @@
     <div id="ourLocation"
       style="margin-top: 2%;padding-top: 4% ;display: flex;flex-direction: column;align-items: center; justify-content: center;">
       <h2 class="sectionHeaders">Check our Location</h2>
+      
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54581.63446897273!2d32.32018906049469!3d31.238673304526646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f99c3e939e6b99%3A0x4cae04550f7d4cb3!2z2KjZiNixINiz2LnZitiv2Iwg2KjZiNixINmB2KTYp9iv2Iwg2KjZiNixINiz2LnZitiv!5e0!3m2!1sar!2seg!4v1640586792388!5m2!1sar!2seg"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.5624740911226!2d32.31293776951153!3d31.260533203453324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f99c527c07cc1f%3A0xb429a612eba7a577!2z2YXYudiv2YrYqSDYqNmI2LHYs9i52YrYryAtINio2YjYsdmB2KTYp9iv!5e0!3m2!1sar!2seg!4v1640943076417!5m2!1sar!2seg"
         width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 

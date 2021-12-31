@@ -32,11 +32,11 @@ let usernameError = false;
 let emailError = false;
 let phoneError = false;
 
-//validate phone number
-function validatePhone() {
-  // let usernameValue = $('#usernames').val();
-  const usernameValue = document.getElementById('usernames').value;
-  if (usernameValue.length == '' || (usernameValue.length < 3) || (usernameValue.length > 10) || (!isNaN(usernameValue))) {
+//validate Username
+function validateUsername() {
+  // let usernameValue = $('#username').val();
+  const usernameValue = document.getElementById('username').value;
+  if (usernameValue.length == '' || (!usernameValue.match(/^[A-Za-z]{3,10}$/))) {
     $('#usercheck').show();
     usernameError = false;
   }
@@ -46,8 +46,9 @@ function validatePhone() {
   }
 }
 
-// Validate Username
-function validateUsername() {
+
+// Validate phone number
+function validatePhone() {
   const phoneValue = document.getElementById('telephoneNumber').value;
   if (phoneValue.length == '' || (!phoneValue.match(/^01[0125][0-9]{8}$/))) {
     $('#telephoneNumbervalid').show();
@@ -87,7 +88,7 @@ $('#submitbtn').click(function (event) {
   if ((usernameError == true) &&
     (emailError == true) && (phoneError == true)) {
       $("#staticBackdrop").modal('show');
-      document.getElementById("usernames").value = "";
+      document.getElementById("username").value = "";
       document.getElementById("telephoneNumber").value = "";
       document.getElementById("email").value = "";
 
@@ -118,13 +119,13 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML ="Stay Tuned : "+ days + "d " + hours + "h "
+  // Output the result in an element with id="StayTuned"
+  document.getElementById("StayTuned").innerHTML ="Stay Tuned : "+ days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, change style
   if (distance < 0) {
-    document.getElementById("demo").style.display="none";
+    document.getElementById("StayTuned").style.display="none";
     document.getElementById("fire").style.display = "block";
   }
 }, 100);
@@ -133,7 +134,6 @@ document.getElementById("playAnimation").onclick=function(){
   // document.getElementById("fire").style.display = "block";
   document.getElementById("fire").classList.toggle("animationDisplay");
 }
-
 
 
 
